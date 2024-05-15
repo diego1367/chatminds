@@ -1,0 +1,43 @@
+<div class="footer-section">
+  <div class="container">
+    <img class="logo" src="../../assets/Logo.png" />
+    <nav>
+      <ul>
+        <li><a routerLink="/main" >Home</a></li>
+        <li><a routerLink="/main" fragment="features">Features</a></li>
+        <li><a routerLink="/main" fragment="ourservices">Our services</a></li>
+        <li><a routerLink="/main" fragment="ourpricing">Pricing</a></li>
+        <li><a routerLink="/contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="sub-container" style="align-items: center;">
+      <div >Stay Connected</div>
+      <div class="buttons-container">
+        <button (click)="openLinkedInProfile(1)"><img class="icon" src="../../assets/instagram.png" /></button>
+        <button (click)="openLinkedInProfile(2)" ><img class="icon" src="../../assets/whatsapp.png" /></button>
+        <button (click)="openLinkedInProfile(3)">
+          <img class="icon" src="../../assets/linkedin.svg" />
+        </button>
+      </div>
+    </div>
+
+  </div>
+  <img class="line" src="img/line.svg" />
+  <div class="container">
+    <div class="div">
+      <button class="button">
+        <img class="icon" src="../../assets/mail.png" />
+        <div class="text-button-2">chatmindsdevelopment@gmail.com</div>
+      </button>
+      <button class="button">
+        <img class="icon" src="../../assets/phone.svg" />
+        <div class="text-button-2">+1 6478094452</div>
+      </button>
+      <button class="button">
+        <img class="icon" src="../../assets/location.svg" />
+        <div class="text-button-2">North America</div>
+      </button>
+    </div>
+    <p class="text">© 2023 SquareUp. All rights reserved.</p>
+  </div>
+</div>

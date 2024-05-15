@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+:root {
+  --dark-green15: rgba(26, 49, 41, 1);
+  --grey-20: rgba(51, 51, 51, 1);
+  --grey-15: rgba(38, 38, 38, 1);
+  --green-70: #fe3172;
+  --green-95: rgba(246, 251, 233, 1);
+  --green-85: rgba(229, 245, 189, 1);
+  --green-97: rgba(250, 253, 242, 1);
+  --green-90: rgba(238, 248, 211, 1);
+}
+
+.mg-Btton {
+  margin-bottom: 12px;
+}
+
+.card {
+  border-color: var(--green-85);
+  background-color: var(--green-95);
+}
+
+.title {
+  font-size: 50px;
+}
+
+.space {
+  padding-top: 20px;
+}

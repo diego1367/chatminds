@@ -1,0 +1,91 @@
+<div class="container">
+    <div style="text-align: center;">
+        <h4 class="title-with-line" style="font-size: 50px; margin-top: 80px;">CONTACT US</h4>
+    </div>
+    <br>
+    <div class="text-center mb-4 text">
+        Unlocking Unparalleled Customer Support: Navigate a World of Assistance with Our Cutting-edge, AI-Driven
+        Customer Service Chatbot – Your 24/7 Companion for Seamless Solutions and Instant Assistance!
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <form [formGroup]="myForm" (ngSubmit)="sendEmail($event)">
+                <div class="row">
+                    <div class="col mb-3">
+                        <label for="validationDefault01">Full name</label>
+                        <input type="text" id="name" class="form-control form-control-lg" id="validationDefault01" formControlName="name"
+                            placeholder="Enter your Name" [ngClass]="{'is-invalid': myForm.get('name')?.invalid && myForm.get('name')?.touched}">
+                        <div class="invalid-feedback" *ngIf="myForm.get('name')?.hasError('required') && myForm.get('name')?.touched">
+                            Name is required.
+                        </div>
+                        <div class="invalid-feedback" *ngIf="myForm.get('name')?.hasError('minlength') && myForm.get('name')?.touched">
+                            Name must be at least 5 characters long.
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <label for="validationDefault02">Email</label>
+                        <input type="email" class="form-control form-control-lg" id="validationDefault02" formControlName="email"
+                            placeholder="Enter your Email" [ngClass]="{'is-invalid': myForm.get('email')?.invalid && myForm.get('email')?.touched}">
+                        <div class="invalid-feedback" *ngIf="myForm.get('email')?.hasError('required') && myForm.get('email')?.touched">
+                            Email is required.
+                        </div>
+                        <div class="invalid-feedback" *ngIf="myForm.get('email')?.hasError('email') && myForm.get('email')?.touched">
+                            Please enter a valid email address.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col mb-3">
+                        <label for="validationDefault03">Phone Number</label>
+                        <input type="tel" class="form-control form-control-lg" id="validationDefault03" formControlName="phone"  pattern="[0-9]*"
+                            placeholder="Enter your Number" [ngClass]="{'is-invalid': myForm.get('phone')?.invalid && myForm.get('phone')?.touched}">
+                        <div class="invalid-feedback" *ngIf="myForm.get('phone')?.hasError('required') && myForm.get('phone')?.touched">
+                            Phone number is required.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col mb-3">
+                        <label for="validationDefault03">Message</label>
+                        <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" placeholder="Enter your Message" formControlName="message"
+                            rows="8" max-rows="10" [ngClass]="{'is-invalid': myForm.get('message')?.invalid && myForm.get('message')?.touched}">
+                         
+                        </textarea>
+                        <div class="invalid-feedback" *ngIf="myForm.get('message')?.hasError('required') && myForm.get('message')?.touched">
+                            Message is required.
+                        </div>
+                    </div>
+                </div>
+                <button class="button" type="submit">Send Message</button>
+            </form>
+            
+        </div>
+        <div class="col-md-6">
+            <img src="../../assets/Map.svg" width="100%" height="90%">
+            <div class="buttons-container">
+                <button (click)="openLinkedInProfile(1)"><img src="../../assets/instagram2.png" /></button>
+                <button (click)="openLinkedInProfile(2)"><img src="../../assets/whatsapp2.png" /></button>
+                <button (click)="openLinkedInProfile(3)"><img src="../../assets/In2.png" /></button>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="row buttons-union" >
+        <div class="col ajust">
+            <button class="button2">
+                <img src="../../assets/Mail2.png" style="margin: 10px;" />
+                <br>chatminds@gmail.com
+            </button>
+        </div>
+        <div class="col">
+            <button class="button2">
+                <img src="../../assets/Maps.png" style="margin: 10px;"/>
+                <br>North America
+            </button>
+        </div>
+    </div>
+    <div class="banner">
+        <img src="../../assets/Banner.png" width="100%">
+    </div>
+</div>

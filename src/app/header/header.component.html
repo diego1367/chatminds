@@ -1,0 +1,21 @@
+ <header > <!-- class="fixed-top" -->
+
+  <a [routerLink]="'/main'">
+    <img src="../../assets/Logo.png" alt="Logo">
+  </a>
+    <nav style="gap: 10px;">
+      <ul>
+        <li><a routerLink="/main" >Home</a></li>
+        <li><a routerLink="/main" fragment="features">Features</a></li>
+        <li><a routerLink="/main" fragment="ourservices">Our services</a></li>
+        <li><a routerLink="/main" fragment="ourpricing">Pricing</a></li>
+        <li>
+          <button [routerLink]="['/contact']" class="button">
+            <span class="text">Contact Us</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+

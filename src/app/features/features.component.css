@@ -1,0 +1,32 @@
+
+.button {
+    all: unset;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 2% 2%;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: var(--green-70);
+    border-radius: 8px;
+  }
+  .text {
+    position: relative;
+    width: fit-content;
+    font-family: "Urbanist", Helvetica;
+    font-weight: 600;
+    color: var(--grey-15);
+    letter-spacing: 0;
+    line-height: 27px;
+    white-space: wrap;
+    margin-left: 5px;
+    margin-top: 10px;
+  }
+
+  .pad {
+    padding: 30px;
+  }
+  p{
+    font-size: large;
+  }

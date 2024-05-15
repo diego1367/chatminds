@@ -1,0 +1,92 @@
+.buttons-container {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.buttons-container button {
+    all: unset;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    padding: 10px 14px;
+    border: 1px solid var(--green-70);
+    border-radius: 5px;
+    font-family: "Barlow-Medium", Helvetica;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
+    background-color: var(--green-70);
+}
+
+.button {
+    all: unset;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 41px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    background-color: var(--green-70);
+    border-radius: 8px;
+    color: white;
+}
+
+.button2 {
+    padding: 25px 51px;
+    width: 80%;
+    background-color: var(--green-70);
+    border-radius: 8px;
+    border: 1px solid white;
+    height: 100%;
+}
+
+.title-with-line {
+    text-align: center;
+    display: inline-flex;
+    border-bottom: 2px solid var(--green-70);
+    padding-bottom: 5px;
+}
+
+.buttons-union {
+    background-color: var(--green-70);
+    margin-top: 30px;
+    padding: 30px;
+}
+
+.banner {
+    margin-top: 170px;
+    margin-bottom: 50px;
+}
+
+.ajust {
+    text-align: right;
+}
+.text{
+    padding-bottom: 150px;
+}
+textarea { resize: none; }
+@media screen and (max-width: 768px) {
+    .buttons-union {
+        margin-top: 30px;
+        padding: 30px;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .banner {
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+
+    .ajust {
+        text-align: center;
+    }
+    .text{
+        padding-bottom: 70px;
+    }
+}
